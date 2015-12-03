@@ -1,7 +1,6 @@
 language: c
 
-script:   "cd examples && tar czvf cov-int.tgz cov-int && curl --form token=secure: "kCXkGsRGqPSrmAGl0fNzCP2uBLPQDGnBBe6QsD7uX9e2xHtPSyuvJSs9qQMDB5upy302kz3KdBRkkaRmoXuEoYXndNBhHDF9PJt7JYrkE+ZgFZjxGFVrQKy6wHEEQwum6L37h7Ptj1BPPA+VAefMwWBDPUbWR7jNkH2riiTiL1XjSDeeyDpCjSpcJAR+3x553HVzOXgE5I1mSDD4URCRHSgKUh8HWP9BrwqLouW2ylLPuJ0AOfiLJceGGbDBAfkxUdQFxV9/tFe8khxKyGW1NsxQBOW5MuOcTNQS3F1r8h4vNybwXKSHrG4lY0E3FHRFttNJIOgGZIsCJfnfOQ9D/99eEnH40b6/+vyFzHbYzX1ln2ZzJnxQtupFF7JHQPxvn09Kvv+XtBSSCu4WKC/FcvL6HBrzHBHTROvewi6CvRCt7IGRIm3FTJp1dqlxHGu2h9jCW64obb14Yw+ZWXh4NHv49RN8xxJqTBns0Fx++jgbQA2u4UtMDZ4Bq+P7v9vAYn26CbxC6zxluVVbsFVm2khLeEwWYjDxmPjhNHf8KySgyuf33ZGl1uyTRSX0XwzvEqqi37iIISGyKUhG4lFZHCgORuMvaHFq7QDu0g3htPwYMUKK4TjHAtEdIRlFQ+m2tvv+0TeG59524BGSsQB2NTcsbU+8u7jzwnQZO2AkDA8="
- --form email=kazan417@mail.ru --form file=@cov-int.tgz --form version='Version' --form description='Description' https://scan.coverity.com/builds?project=kazan417%2Fmongoose"
+script:   "cd examples && tar czvf cov-int.tgz cov-int && curl --form token=secure --form email=kazan417@mail.ru --form file=@cov-int.tgz --form version='Version' --form description='Description' https://scan.coverity.com/builds?project=kazan417%2Fmongoose"
 env:
   global:
    # The next declaration is the encrypted COVERITY_SCAN_TOKEN, created
