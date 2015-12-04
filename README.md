@@ -4,6 +4,10 @@
 
 ![](https://img.shields.io/badge/license-GPL_2-green.svg "License")
 [![Build Status](https://travis-ci.org/kazan417/mongoose.svg?branch=master)](https://travis-ci.org/kazan417/mongoose)
+<a href="https://scan.coverity.com/projects/kazan417-mongoose">
+  <img alt="Coverity Scan Build Status"
+       src="https://scan.coverity.com/projects/6741/badge.svg"/>
+</a>
 
 
 Mongoose is ideal for embedded environments, it has been designed as an open
