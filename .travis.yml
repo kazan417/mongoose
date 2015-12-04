@@ -1,6 +1,6 @@
 language: c
-
-script:   "cd examples && tar czvf cov-int.tgz cov-int && curl --form token=secure --form email=kazan417@mail.ru --form file=@cov-int.tgz --form version='Version' --form description='Description' https://scan.coverity.com/builds?project=kazan417%2Fmongoose"
+before_script: "cd examples"
+script:   "make"
 env:
   global:
    # The next declaration is the encrypted COVERITY_SCAN_TOKEN, created
@@ -11,7 +11,7 @@ addons:
   coverity_scan:
     project:
       name: "kazan417/mongoose"
-      description: "Build submitted via Travis CI"
+      description: "new build of mongoose submitted via Travis CI"
     notification_email: kazan417@mail.ru
     build_command_prepend: "cd examples"
     build_command:   "make"
