@@ -1,6 +1,6 @@
 language: c
-before_script: "cd examples"
-script:   "make"
+#before_script: "cd examples"
+#script:   "make"
 env:
   global:
    # The next declaration is the encrypted COVERITY_SCAN_TOKEN, created
@@ -13,7 +13,7 @@ addons:
       name: "kazan417/mongoose"
       description: "new build of mongoose submitted via Travis CI"
     notification_email: kazan417@mail.ru
-   # build_command_prepend: "cd examples"
+    build_command_prepend: "cd examples"
     build_command:   "make"
     branch_pattern: master
 
