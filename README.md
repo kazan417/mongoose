@@ -3,6 +3,7 @@
 [![Join the chat at https://gitter.im/cesanta/mongoose](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/cesanta/mongoose?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ![](https://img.shields.io/badge/license-GPL_2-green.svg "License")
+[![Build Status](https://travis-ci.org/kazan417/mongoose.svg?branch=master)](https://travis-ci.org/kazan417/mongoose)
 
 
 Mongoose is ideal for embedded environments, it has been designed as an open
