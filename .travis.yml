@@ -1,6 +1,6 @@
 language: c
 
-#before_script: "cd examples"
+before_script: "echo $COVERITY_SCAN_TOKEN"
 script:   "echo $COVERITY_SCAN_TOKEN && cd examples && tar czvf cov-int.tgz cov-int && curl --form token=$COVERITY_SCAN_TOKEN --form email=kazan417@mail.ru --form file=@cov-int.tgz --form version='Version 6.1' --form description='Description' https://scan.coverity.com/builds?project=kazan417%2Fmongoose"
 env:
   global:
