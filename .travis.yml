@@ -1,6 +1,6 @@
 language: c
 #before_script: "cd examples"
-script:   "cd examples && tar czvf cov-int.tgz cov-int && curl --form token=secure --form email=kazan417@mail.ru --form file=@cov-int.tgz --form version='Version' --form description='Description' https://scan.coverity.com/builds?project=kazan417%2Fmongoose"  
+script: "cd examples && tar czvf cov-int.tgz cov-int && curl --form token=secure --form email=kazan417@mail.ru --form file=@cov-int.tgz --form version='Version' --form description='Description' https://scan.coverity.com/builds?project=kazan417%2Fmongoose"  
     
 
 env:
